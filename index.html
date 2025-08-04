@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAKPOR - Votre boutique en ligne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>VAKPOR</h1>
+        <p>Électroménager, vestimentaire, meubles - Tout en un seul endroit.</p>
+    </header>
+
+    <main id="main-content">
+        <div id="main-categories">
+            <section class="category" id="category-electromenager">
+                <h2>Électroménager</h2>
+                <p>Découvrez notre sélection de réfrigérateurs, lave-linge, micro-ondes et plus encore.</p>
+            </section>
+
+            <section class="category" id="category-vestimentaire">
+                <h2>Vestimentaire</h2>
+                <p>Mode pour homme, femme et enfant. Trouvez votre style !</p>
+            </section>
+
+            <section class="category" id="category-meubles">
+                <h2>Meubles</h2>
+                <p>Ameublez votre maison avec nos tables, chaises, canapés et lits.</p>
+            </section>
+        </div>
+
+        <div id="sub-categories-container" class="hidden">
+            <button id="back-to-main-button">Retour aux catégories</button>
+            <h2 id="sub-categories-title"></h2>
+            <ul id="sub-categories-list"></ul>
+        </div>
+
+        <div id="products-container" class="hidden">
+            <button id="back-to-sub-button">Retour</button>
+            <h2 id="products-title"></h2>
+            <div id="products-grid"></div>
+        </div>
+    </main>
+
+    <div id="chatbot-container">
+        <div id="chatbot-toggle">
+            Chatbot
+        </div>
+        <div id="chatbot-window" class="hidden">
+            <div id="chatbot-messages"></div>
+            <input type="text" id="chatbot-input" placeholder="Tapez votre question...">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 VAKPOR. Tous droits réservés.</p>
+    </footer>
+
+    <script src="vente.js"></script>
+</body>
+</html>
